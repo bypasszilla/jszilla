@@ -6867,15 +6867,8 @@ window.jwplayer = function(t) {
         };
     }
     )();
-    var CAPTION_CODE_MAP = {
-        off: 'off',
-        english: 'en',
-        espaÃ±ol: 'es',
-        portuguÃªs: 'pt',
-        'ä¸­æ–‡(ç®€ä½“)': 'cn',
-        'ä¸­æ–‡(ç¹ä½“)': 'tw',
-        í•œê¸€: 'kr'
-    };
+    CAPTION_CODE_MAP={off:'off',english:'en',espaÃ±ol:'es',portuguÃªs:'pt','ä¸­æ–‡(ç®€ä½“)':'cn','ä¸­æ–‡(ç¹ä½“)':'tw',í•œê¸€:'kr'};
+	
     var player = jwplayer('video_player');
     var continueWatchingUrl = null;
     var nextEpisodeUrl = null;
