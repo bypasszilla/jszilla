@@ -6867,8 +6867,15 @@ window.jwplayer = function(t) {
         };
     }
     )();
-    CAPTION_CODE_MAP={off:'off',english:'en',espaÃ±ol:'es',portuguÃªs:'pt','ä¸­æ–‡(ç®€ä½“)':'cn','ä¸­æ–‡(ç¹ä½“)':'tw',í•œê¸€:'kr'};
-	
+    var CAPTION_CODE_MAP = {
+        off: 'off',
+        english: 'en',
+        español: 'es',
+        português: 'pt',
+        '中文(简体)': 'cn',
+        '中文(繁体)': 'tw',
+        한글: 'kr'
+    };
     var player = jwplayer('video_player');
     var continueWatchingUrl = null;
     var nextEpisodeUrl = null;
@@ -6886,7 +6893,7 @@ window.jwplayer = function(t) {
     var cdnProvider = null;
     var googleAdTag = '';
     var adultOnlyHtml = $('#adult_only_template');
-	var member=1;
+    var member=1;
     if (adultOnlyHtml.length) {
         adultOnlyHtml = adultOnlyHtml.html();
     } else {
